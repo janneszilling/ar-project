@@ -27,10 +27,50 @@
 
 <body style='margin : 0; overflow: hidden;'>
     <a-scene embedded arjs='sourceType: webcam;'>
-        <!-- create your content here. just a box for now -->
-        <a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>
-        <!-- define a camera which will move according to the marker position -->
-        <a-marker-camera preset='hiro'></a-marker-camera>
+
+    <!-- handle marker with your own pattern -->
+    <a-marker type='pattern' url='pattern-marker/pattern-videocamera.patt'>
+        <a-entity 
+            gltf-model=”url(objects/Camera.glb)”>
+        </a-entity>
+    </a-marker>
+
+    <!-- handle marker with your own pattern -->
+    <a-marker type='pattern' url='pattern-marker/pattern-headphones.patt'>
+        <!-- Adding an OBJ file to an AR Project-->
+        <a-entity 
+            obj-model=”obj: url(objects/Headphones.obj);”>
+        </a-entity>
+    </a-marker>
+
+    <!-- handle marker with your own pattern -->
+    <a-marker type='pattern' url='pattern-marker/pattern-info.patt'>
+        <a-box position='0 0.5 0' material='color: red;'></a-box>
+    </a-marker>
+
+    <!-- handle marker with your own pattern -->
+    <a-marker type='pattern' url='pattern-marker/pattern-graphicdesign.patt'>
+        <!-- Adding an OBJ file to an AR Project-->
+        <a-entity 
+            obj-model=”obj: url(objects/deer.obj);”>
+        </a-entity>
+    </a-marker>
+
+    <!-- handle marker with your own pattern -->
+    <a-marker type='pattern' url='pattern-marker/pattern-coding.patt'>
+        <a-box position='0 0.5 0' material='color: red;'></a-box>
+    </a-marker>
+
+    <!-- handle marker with your own pattern -->
+    <a-marker type='pattern' url='pattern-marker/pattern-animation.patt'>
+        <!-- Adding an OBJ file to an AR Project-->
+        <a-entity 
+            obj-model=”obj: url(objects/VR_simple.obj);”>
+        </a-entity>
+    </a-marker>
+
+    <!-- add a simple camera -->
+    <a-entity camera></a-entity>
     </a-scene>
 </body>
 
