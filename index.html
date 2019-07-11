@@ -27,7 +27,8 @@
 
         <!-- handle marker with your own pattern videocamera -->
         <a-marker preset='custom' type='pattern' url='pattern-marker/pattern-videocamera.patt'>
-            <a-entity position="0 0 0" scale="0.05 0.05 0.05" gltf-model="url(objects/Camera.glb)">
+            <!-- Adding an OBJ file to an AR Project -->
+            <a-entity position="0 0 0" scale="0.10 0.10 0.10" obj-model="obj: url(objects/CannonCamera.obj);">
             </a-entity>
         </a-marker>
 
@@ -46,9 +47,7 @@
 
         <!-- handle marker with your own pattern graphicdesign -->
         <a-marker preset='custom' type='pattern' url='pattern-marker/pattern-graphic.patt'>
-            <!-- Adding an OBJ file to an AR Project -->
-            <a-entity position="0 0 0" scale="0.10 0.10 0.10" obj-model="obj: url(objects/brushes.obj);">
-            </a-entity>
+            <a-image src="objects/poster.png"></a-image>
         </a-marker>
 
         <!-- handle marker with your own pattern coding -->
