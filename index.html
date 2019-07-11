@@ -27,7 +27,7 @@
 
         <!-- handle marker with your own pattern videocamera -->
         <a-marker preset='custom' type='pattern' url='pattern-marker/pattern-videocamera.patt'>
-            <a-entity position="0.5 -2 -0.5" scale="0.10 0.10 0.10" gltf-model="url(objects/Camera.glb)">
+            <a-entity position="0 0 0" scale="0.05 0.05 0.05" gltf-model="url(objects/Camera.glb)">
             </a-entity>
         </a-marker>
 
@@ -35,31 +35,31 @@
         <!-- handle marker with your own pattern headphones -->
         <a-marker preset='custom' type='pattern' url='pattern-marker/pattern-headphones.patt'>
             <!-- Adding an OBJ file to an AR Project -->
-            <a-entity position="0.5 -2 -0.5" scale="0.10 0.10 0.10" obj-model="obj: url(objects/Headphones.obj);">
+            <a-entity position="0 0 0" scale="0.10 0.10 0.10" obj-model="obj: url(objects/Headphones.obj);">
             </a-entity>
         </a-marker>
 
         <!-- handle marker with your own pattern information -->
         <a-marker preset='custom' type='pattern' url='pattern-marker/pattern-info.patt'>
-            <a-box position='0 0.5 0' material='color: red;'></a-box>
+            <a-text position='0 0 0' value="Medieninformatik" side='front' rotation='-90 0 0' color='black'></a-text>
         </a-marker>
 
         <!-- handle marker with your own pattern graphicdesign -->
         <a-marker preset='custom' type='pattern' url='pattern-marker/pattern-graphic.patt'>
             <!-- Adding an OBJ file to an AR Project -->
-            <a-entity position="0.5 -2 -0.5" scale="0.10 0.10 0.10" obj-model="obj: url(objects/brushes.obj);">
+            <a-entity position="0 0 0" scale="0.10 0.10 0.10" obj-model="obj: url(objects/brushes.obj);">
             </a-entity>
         </a-marker>
 
         <!-- handle marker with your own pattern coding -->
         <a-marker preset='custom' type='pattern' url='pattern-marker/pattern-coding.patt'>
-            <a-box position='0 0.5 0' material='color: red;'></a-box>
+            <a-text position='0 0 0' value="print('Hello World!')" side='front' rotation='-90 0 0' color='blue'></a-text>
         </a-marker>
 
         <!-- handle marker with your own pattern animation -->
         <a-marker preset='custom' type='pattern' url='pattern-marker/pattern-animation.patt'>
             <!-- Adding an OBJ file to an AR Project -->
-            <a-entity position="0.5 -2 -0.5" scale="0.10 0.10 0.10" obj-model="obj: url(objects/VR_simple.obj);">
+            <a-entity position="0 0 0" scale="0.30 0.30 0.30" rotation='-90 0 0' obj-model="obj: url(objects/VR_simple.obj);">
             </a-entity>
         </a-marker>
 
