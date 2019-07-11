@@ -29,6 +29,12 @@
         <a-marker preset='custom' type='pattern' url='pattern-marker/pattern-videocamera.patt'>
             <!-- Adding an OBJ file to an AR Project -->
             <a-entity position="0 0 0" scale="0.10 0.10 0.10" rotation='-90 0 0' material='color: #1E1E1E' obj-model="obj: url(objects/DigiCam.obj);">
+                <a-animation attribute="rotation"
+                    dur="10000"
+                    fill="forwards"
+                    to="0 0 360"
+                    repeat="indefinite">
+                </a-animation>
             </a-entity>
         </a-marker>
 
@@ -40,7 +46,7 @@
                 <a-animation attribute="rotation"
                     dur="10000"
                     fill="forwards"
-                    to="360 0 0"
+                    to="0 0 360"
                     repeat="indefinite">
                 </a-animation>
             </a-entity>
@@ -48,7 +54,7 @@
 
         <!-- handle marker with your own pattern information -->
         <a-marker preset='custom' type='pattern' url='pattern-marker/pattern-info.patt'>
-            <a-text position='-1.5 0 0' value="Medieninformatik" side='front' width='10' rotation='-90 0 0' color='#1E1E1E'></a-text>
+            <a-text position='-1.5 0 0' value="Medieninformatik" side='front' width='10' rotation='-90 0 0' color='#6666FF'></a-text>
         </a-marker>
 
         <!-- handle marker with your own pattern graphicdesign -->
@@ -58,13 +64,19 @@
 
         <!-- handle marker with your own pattern coding -->
         <a-marker preset='custom' type='pattern' url='pattern-marker/pattern-coding.patt'>
-            <a-text position='-0.9 0 0' value="print('Hello World!')" side='front' width='5' rotation='-90 0 0' color='blue'></a-text>
+            <a-text position='-0.9 0 0' value="print('Hello World!')" side='front' width='5' rotation='-90 0 0' color='#6666FF'></a-text>
         </a-marker>
 
         <!-- handle marker with your own pattern animation -->
         <a-marker preset='custom' type='pattern' url='pattern-marker/pattern-animation.patt'>
             <!-- Adding an OBJ file to an AR Project -->
-            <a-entity position="0 0 0" scale="0.30 0.30 0.30" rotation='-90 0 0' material='color: #333333' obj-model="obj: url(objects/VR_simple.obj);">
+            <a-entity position="0 0 0" scale="0.40 0.40 0.40" rotation='-90 0 0' material='color: #333333' obj-model="obj: url(objects/VR_simple.obj);">
+                <a-animation attribute="rotation"
+                    dur="10000"
+                    fill="forwards"
+                    to="0 0 360"
+                    repeat="indefinite">
+                </a-animation>
             </a-entity>
         </a-marker>
 
