@@ -25,59 +25,55 @@
 <body style='margin : 0; overflow: hidden;'>
     <a-scene embedded arjs='sourceType: webcam;'>
 
-    <!-- handle marker with your own pattern --
+    <!-- handle marker with your own pattern videocamera -->
     <a-marker preset='custom' type='pattern' url='pattern-marker/pattern-videocamera.patt'>
         <a-entity 
             position="0.5 -2 -0.5"
             scale="0.10 0.10 0.10"
             gltf-model="url(objects/Camera.glb)">
         </a-entity>
-    </a-marker> -->
+    </a-marker>
 
     
-    <!-- handle marker with your own pattern 
+    <!-- handle marker with your own pattern headphones -->
     <a-marker preset='custom' type='pattern' url='pattern-marker/pattern-headphones.patt'>
-        <!-- Adding an OBJ file to an AR Project
+        <!-- Adding an OBJ file to an AR Project -->
         <a-entity 
             position="0.5 -2 -0.5"
             scale="0.10 0.10 0.10"
             obj-model="obj: url(objects/Headphones.obj);">
         </a-entity>
-    </a-marker> -->
+    </a-marker>
 
-    <!-- handle marker with your own pattern 
-    <a-marker preset='custom' type='pattern' patternUrl='pattern-marker/pattern-info.patt'>
+    <!-- handle marker with your own pattern information -->
+    <a-marker preset='custom' type='pattern' url='pattern-marker/pattern-info.patt'>
         <a-box position='0 0.5 0' material='color: red;'></a-box>
-    </a-marker> -->
+    </a-marker> 
 
-    <!-- handle marker with your own pattern --
+    <!-- handle marker with your own pattern graphicdesign -->
     <a-marker preset='custom' type='pattern' url='pattern-marker/pattern-graphicdesign.patt'>
-        <!-- Adding an OBJ file to an AR Project
+        <!-- Adding an OBJ file to an AR Project -->
         <a-entity
             position="0.5 -2 -0.5"
             scale="0.10 0.10 0.10" 
             obj-model="obj: url(objects/deer.obj);">
         </a-entity>
-    </a-marker>-->
-
-    <!-- handle marker with your own pattern -->
-    <a-marker preset='custom' type='pattern' url='pattern-marker/pattern-coding.patt'>
-        <a-box position='0 0.5 0' material='color: red;'></a-box>
     </a-marker>
-    
+
+    <!-- handle marker with your own pattern coding -->
     <a-marker preset='custom' type='pattern' url='pattern-marker/pattern-coding.patt'>
         <a-box position='0 0.5 0' material='color: red;'></a-box>
     </a-marker>
 
-    <!-- handle marker with your own pattern -
+    <!-- handle marker with your own pattern animation -->
     <a-marker preset='custom' type='pattern' url='pattern-marker/pattern-animation.patt'>
-        <!-- Adding an OBJ file to an AR Project
+        <!-- Adding an OBJ file to an AR Project -->
         <a-entity 
             position="0.5 -2 -0.5"
             scale="0.10 0.10 0.10"
             obj-model="obj: url(objects/VR_simple.obj);">
         </a-entity>
-    </a-marker>-->
+    </a-marker>
 
     <!-- handle marker with hiro preset -->
     <a-marker preset='hiro'>
